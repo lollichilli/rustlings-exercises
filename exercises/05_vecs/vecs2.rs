@@ -30,8 +30,16 @@ fn vec_map(input: &[i32]) -> Vec<i32> {
         .collect()
 }
 
+fn generate_vector() -> Vec<i32> {
+    let mut v = Vec::new();
+    for i in (0..10) {
+        v.push(i);
+    }
+    v
+}
 fn main() {
-    // You can optionally experiment here.
+    let v = generate_vector();
+    println!("{:?}", v);
 }
 
 #[cfg(test)]
